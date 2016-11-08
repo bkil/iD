@@ -9,7 +9,12 @@
         "internet_access/fee",
         "internet_access/ssid",
         "smoking",
-        "outdoor_seating"
+        "outdoor_seating",
+        "lunch/menu",
+        "lunch/buffet",
+        "phone",
+        "website",
+        "contact/facebook"
     ],
     "geometry": [
         "point",

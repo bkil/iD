@@ -10,7 +10,14 @@
         "delivery",
         "drive_through",
         "smoking",
-        "outdoor_seating"
+        "outdoor_seating",
+        "lunch/menu",
+        "lunch/buffet",
+        "internet_access",
+        "internet_access/ssid",
+        "phone",
+        "website",
+        "contact/facebook"
     ],
     "geometry": [
         "point",

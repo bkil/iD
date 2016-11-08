@@ -1,0 +1,7 @@
+{
+    "key": "contact:skype",
+    "type": "text",
+    "placeholder": "SkypeName",
+    "universal": true,
+    "label": "Skype Name"
+}

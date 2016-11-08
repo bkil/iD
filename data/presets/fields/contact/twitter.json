@@ -1,0 +1,8 @@
+{
+    "key": "contact:twitter",
+    "type": "url",
+    "icon": "logo-twitter",
+    "placeholder": "http://example.com/",
+    "universal": true,
+    "label": "Twitter Account"
+}

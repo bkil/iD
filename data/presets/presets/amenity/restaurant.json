@@ -8,6 +8,13 @@
         "capacity",
         "takeaway",
         "delivery",
+        "lunch/menu",
+        "lunch/buffet",
+        "internet_access",
+        "internet_access/ssid",
+        "phone",
+        "website",
+        "contact/facebook",
         "smoking"
     ],
     "geometry": [

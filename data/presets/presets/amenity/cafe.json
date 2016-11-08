@@ -3,9 +3,16 @@
     "fields": [
         "cuisine",
         "internet_access",
+        "internet_access/fee",
+        "internet_access/ssid",
         "address",
         "building_area",
         "opening_hours",
+        "lunch/menu",
+        "lunch/buffet",
+        "phone",
+        "website",
+        "contact/facebook",
         "smoking"
     ],
     "geometry": [

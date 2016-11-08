@@ -4,6 +4,13 @@
         "address",
         "building_area",
         "opening_hours",
+        "sport",
+        "lunch/menu",
+        "internet_access",
+        "internet_access/ssid",
+        "phone",
+        "website",
+        "contact/facebook",
         "smoking"
     ],
     "geometry": [

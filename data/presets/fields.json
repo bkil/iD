@@ -278,6 +278,30 @@
             "type": "combo",
             "label": "Building"
         },
+        "camera/features": {
+            "key": "camera:features",
+            "type": "combo",
+            "label": "Camera features",
+            "placeholder": "Webcam, Microphone, Nightvision, Heatvision, Zoom, Motion, Wireless"
+        },
+        "camera/mount": {
+            "key": "camera:mount",
+            "type": "combo",
+            "label": "Camera mount",
+            "placeholder": "Wall, Pole"
+        },
+        "camera/type": {
+            "key": "camera:type",
+            "type": "combo",
+            "label": "Camera type",
+            "default": "fixed",
+            "placeholder": "Fixed, Panning, Dome",
+            "options": [
+                "fixed",
+                "panning",
+                "dome"
+            ]
+        },
         "capacity": {
             "key": "capacity",
             "type": "number",
@@ -329,6 +353,76 @@
             "key": "construction",
             "type": "combo",
             "label": "Type"
+        },
+        "contact/email": {
+            "key": "contact:email",
+            "type": "email",
+            "placeholder": "user@example.com",
+            "universal": true,
+            "label": "E-mail"
+        },
+        "contact/facebook": {
+            "key": "contact:facebook",
+            "type": "url",
+            "icon": "logo-facebook",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "Facebook Profile"
+        },
+        "contact/google_plus": {
+            "key": "contact:google_plus",
+            "type": "url",
+            "icon": "logo-google",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "Google+ Account"
+        },
+        "contact/instagram": {
+            "key": "contact:instagram",
+            "type": "url",
+            "icon": "website",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "Instagram Account"
+        },
+        "contact/linkedin": {
+            "key": "contact:linkedin",
+            "type": "url",
+            "icon": "website",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "LinkedIn Account"
+        },
+        "contact/skype": {
+            "key": "contact:skype",
+            "type": "text",
+            "placeholder": "SkypeName",
+            "universal": true,
+            "label": "Skype Name"
+        },
+        "contact/twitter": {
+            "key": "contact:twitter",
+            "type": "url",
+            "icon": "logo-twitter",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "Twitter Account"
+        },
+        "contact/vk": {
+            "key": "contact:vk",
+            "type": "url",
+            "icon": "website",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "VK.com Account"
+        },
+        "contact/webcam": {
+            "key": "contact:webcam",
+            "type": "url",
+            "icon": "website",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "Webcam feed URL"
         },
         "content": {
             "key": "content",
@@ -691,6 +785,11 @@
             "type": "check",
             "label": "Internet Access Fee"
         },
+        "internet_access/ssid": {
+            "key": "internet_access:ssid",
+            "type": "text",
+            "label": "SSID (Network Name)"
+        },
         "kerb": {
             "key": "kerb",
             "type": "combo",
@@ -800,6 +899,25 @@
             "key": "location",
             "type": "combo",
             "label": "Location"
+        },
+        "lunch": {
+            "key": "lunch",
+            "type": "combo",
+            "label": "Daily Lunch (Unknown Kind)",
+            "default": "no",
+            "placeholder": "Yes, No, <Lunch Hours>"
+        },
+        "lunch/buffet": {
+            "key": "lunch:buffet",
+            "type": "combo",
+            "label": "Daily Buffet Lunch (All You Can Eat)",
+            "placeholder": "Yes, No, <Lunch Hours>"
+        },
+        "lunch/menu": {
+            "key": "lunch:menu",
+            "type": "combo",
+            "label": "Daily Menu Lunch (Mass Prepared, Inexpensive)",
+            "placeholder": "Yes, No, <Lunch Hours>"
         },
         "man_made": {
             "key": "man_made",
@@ -987,6 +1105,11 @@
             "key": "operator",
             "type": "text",
             "label": "Operator"
+        },
+        "outdoor_seating": {
+            "key": "outdoor_seating",
+            "type": "combo",
+            "label": "Outdoor Seating"
         },
         "par": {
             "key": "par",
@@ -1420,6 +1543,36 @@
             "type": "combo",
             "label": "Surface"
         },
+        "surveillance": {
+            "key": "surveillance",
+            "type": "combo",
+            "label": "Surveillance kind",
+            "default": "outdoor",
+            "placeholder": "Public, Outdoor, Indoor",
+            "options": [
+                "public",
+                "outdoor",
+                "indoor"
+            ]
+        },
+        "surveillance/type": {
+            "key": "surveillance:type",
+            "type": "combo",
+            "label": "What is watching",
+            "default": "camera",
+            "placeholder": "Camera, Guard, ALPR",
+            "options": [
+                "camera",
+                "guard",
+                "alpr"
+            ]
+        },
+        "surveillance/zone": {
+            "key": "surveillance:zone",
+            "type": "combo",
+            "label": "Zone",
+            "placeholder": "Town, Parking, Traffic, Shop, Building"
+        },
         "tactile_paving": {
             "key": "tactile_paving",
             "type": "check",
@@ -1437,6 +1590,18 @@
                     "only": "Takeaway Only"
                 }
             }
+        },
+        "taxon": {
+            "key": "taxon",
+            "type": "localized",
+            "label": "Taxonomical Name of Species",
+            "placeholder": "Scientific & Localized Names"
+        },
+        "taxon/genus": {
+            "key": "taxon:genus",
+            "type": "text",
+            "label": "Taxonomic Genus of Species",
+            "placeholder": "Scientific Name of Genus"
         },
         "toilets/disposal": {
             "key": "toilets:disposal",

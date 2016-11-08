@@ -815,6 +815,18 @@
                 "building": {
                     "label": "Building"
                 },
+                "camera/features": {
+                    "label": "Camera features",
+                    "placeholder": "Webcam, Microphone, Nightvision, Heatvision, Zoom, Motion, Wireless"
+                },
+                "camera/mount": {
+                    "label": "Camera mount",
+                    "placeholder": "Wall, Pole"
+                },
+                "camera/type": {
+                    "label": "Camera type",
+                    "placeholder": "Fixed, Panning, Dome"
+                },
                 "capacity": {
                     "label": "Capacity",
                     "placeholder": "50, 100, 200..."
@@ -852,6 +864,42 @@
                 },
                 "construction": {
                     "label": "Type"
+                },
+                "contact/email": {
+                    "label": "E-mail",
+                    "placeholder": "user@example.com"
+                },
+                "contact/facebook": {
+                    "label": "Facebook Profile",
+                    "placeholder": "http://example.com/"
+                },
+                "contact/google_plus": {
+                    "label": "Google+ Account",
+                    "placeholder": "http://example.com/"
+                },
+                "contact/instagram": {
+                    "label": "Instagram Account",
+                    "placeholder": "http://example.com/"
+                },
+                "contact/linkedin": {
+                    "label": "LinkedIn Account",
+                    "placeholder": "http://example.com/"
+                },
+                "contact/skype": {
+                    "label": "Skype Name",
+                    "placeholder": "SkypeName"
+                },
+                "contact/twitter": {
+                    "label": "Twitter Account",
+                    "placeholder": "http://example.com/"
+                },
+                "contact/vk": {
+                    "label": "VK.com Account",
+                    "placeholder": "http://example.com/"
+                },
+                "contact/webcam": {
+                    "label": "Webcam feed URL",
+                    "placeholder": "http://example.com/"
                 },
                 "content": {
                     "label": "Contents"
@@ -1072,6 +1120,9 @@
                 "internet_access/fee": {
                     "label": "Internet Access Fee"
                 },
+                "internet_access/ssid": {
+                    "label": "SSID (Network Name)"
+                },
                 "kerb": {
                     "label": "Curb Ramp"
                 },
@@ -1142,6 +1193,18 @@
                 },
                 "location": {
                     "label": "Location"
+                },
+                "lunch": {
+                    "label": "Daily Lunch (Unknown Kind)",
+                    "placeholder": "Yes, No, <Lunch Hours>"
+                },
+                "lunch/buffet": {
+                    "label": "Daily Buffet Lunch (All You Can Eat)",
+                    "placeholder": "Yes, No, <Lunch Hours>"
+                },
+                "lunch/menu": {
+                    "label": "Daily Menu Lunch (Mass Prepared, Inexpensive)",
+                    "placeholder": "Yes, No, <Lunch Hours>"
                 },
                 "man_made": {
                     "label": "Type"
@@ -1259,6 +1322,9 @@
                 },
                 "operator": {
                     "label": "Operator"
+                },
+                "outdoor_seating": {
+                    "label": "Outdoor Seating"
                 },
                 "par": {
                     "label": "Par",
@@ -1512,6 +1578,18 @@
                 "surface": {
                     "label": "Surface"
                 },
+                "surveillance": {
+                    "label": "Surveillance kind",
+                    "placeholder": "Public, Outdoor, Indoor"
+                },
+                "surveillance/type": {
+                    "label": "What is watching",
+                    "placeholder": "Camera, Guard, ALPR"
+                },
+                "surveillance/zone": {
+                    "label": "Zone",
+                    "placeholder": "Town, Parking, Traffic, Shop, Building"
+                },
                 "tactile_paving": {
                     "label": "Tactile Paving"
                 },
@@ -1523,6 +1601,14 @@
                         "no": "No",
                         "only": "Takeaway Only"
                     }
+                },
+                "taxon": {
+                    "label": "Taxonomical Name of Species",
+                    "placeholder": "Scientific & Localized Names"
+                },
+                "taxon/genus": {
+                    "label": "Taxonomic Genus of Species",
+                    "placeholder": "Scientific Name of Genus"
                 },
                 "toilets/disposal": {
                     "label": "Disposal",
@@ -1902,7 +1988,7 @@
                 },
                 "amenity/hunting_stand": {
                     "name": "Hunting Stand",
-                    "terms": ""
+                    "terms": "game,lookout,shoot,wild,watch"
                 },
                 "amenity/ice_cream": {
                     "name": "Ice Cream Shop",
@@ -1990,7 +2076,7 @@
                 },
                 "amenity/pub": {
                     "name": "Pub",
-                    "terms": "dive,beer,bier,booze"
+                    "terms": "alcohol,drink,dive,beer,bier,booze"
                 },
                 "amenity/public_bookcase": {
                     "name": "Public Bookcase",
@@ -2796,6 +2882,10 @@
                     "name": "Unmaintained Track Road",
                     "terms": "woods road,forest road,logging road,fire road,farm road,agricultural road,ranch road,carriage road,primitive,unmaintained,rut,offroad,4wd,4x4,four wheel drive,atv,quad,jeep,double track,two track"
                 },
+                "highway/traffic_mirror": {
+                    "name": "Traffic Mirror",
+                    "terms": "blind spot,convex,corner,curved,roadside,round,safety,sphere,visibility"
+                },
                 "highway/traffic_signals": {
                     "name": "Traffic Signals",
                     "terms": "light,stoplight,traffic light"
@@ -3190,7 +3280,7 @@
                 },
                 "man_made/surveillance": {
                     "name": "Surveillance",
-                    "terms": "cctv"
+                    "terms": "security,camera,guard,video,webcam,alpr,cctv"
                 },
                 "man_made/survey_point": {
                     "name": "Survey Point",

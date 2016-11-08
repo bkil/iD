@@ -143,6 +143,7 @@
             "name": "Waterway"
         },
         "address": {
+            "icon": "square-stroked",
             "fields": [
                 "address"
             ],
@@ -588,6 +589,7 @@
             "name": "Barbecue/Grill"
         },
         "amenity/bench": {
+            "icon": "picnic-site",
             "fields": [
                 "backrest"
             ],
@@ -745,9 +747,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "geometry": [
@@ -922,6 +931,7 @@
             "name": "Clinic"
         },
         "amenity/clock": {
+            "icon": "circle",
             "fields": [
                 "support",
                 "display",
@@ -1083,7 +1093,7 @@
             "name": "Dojo / Martial Arts Academy"
         },
         "amenity/drinking_water": {
-            "icon": "water",
+            "icon": "drinking-water",
             "geometry": [
                 "point"
             ],
@@ -1123,6 +1133,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "geometry": [
@@ -1175,6 +1192,7 @@
             "name": "Fire Station"
         },
         "amenity/fountain": {
+            "icon": "water",
             "geometry": [
                 "point",
                 "area"
@@ -1275,12 +1293,19 @@
             "name": "Hospital Grounds"
         },
         "amenity/hunting_stand": {
+            "icon": "zoo",
             "geometry": [
                 "point",
                 "vertex",
                 "area"
             ],
-            "terms": [],
+            "terms": [
+                "game",
+                "lookout",
+                "shoot",
+                "wild",
+                "watch"
+            ],
             "tags": {
                 "amenity": "hunting_stand"
             },
@@ -1776,6 +1801,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "geometry": [
@@ -1786,6 +1818,8 @@
                 "amenity": "pub"
             },
             "terms": [
+                "alcohol",
+                "drink",
                 "dive",
                 "beer",
                 "bier",
@@ -1903,6 +1937,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "geometry": [
@@ -1999,6 +2040,7 @@
             "name": "Shelter"
         },
         "amenity/social_facility": {
+            "icon": "heart",
             "fields": [
                 "operator",
                 "address",
@@ -2018,6 +2060,7 @@
             "name": "Social Facility"
         },
         "amenity/social_facility/food_bank": {
+            "icon": "fast-food",
             "fields": [
                 "operator",
                 "address",
@@ -2037,6 +2080,7 @@
             "name": "Food Bank"
         },
         "amenity/social_facility/group_home": {
+            "icon": "lodging",
             "fields": [
                 "operator",
                 "address",
@@ -2062,6 +2106,7 @@
             "name": "Elderly Group Home"
         },
         "amenity/social_facility/homeless_shelter": {
+            "icon": "lodging",
             "fields": [
                 "operator",
                 "address",
@@ -2237,6 +2282,7 @@
             "name": "University Grounds"
         },
         "amenity/vending_machine/cigarettes": {
+            "icon": "fire-station",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2255,6 +2301,7 @@
             "name": "Cigarette Vending Machine"
         },
         "amenity/vending_machine/condoms": {
+            "icon": "heart",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2273,6 +2320,7 @@
             "name": "Condom Vending Machine"
         },
         "amenity/vending_machine/drinks": {
+            "icon": "alcohol-shop",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2295,6 +2343,7 @@
             "name": "Drink Vending Machine"
         },
         "amenity/vending_machine/excrement_bags": {
+            "icon": "veterinary",
             "fields": [
                 "operator",
                 "fee",
@@ -2318,6 +2367,7 @@
             "name": "Excrement Bag Vending Machine"
         },
         "amenity/vending_machine/news_papers": {
+            "icon": "library",
             "fields": [
                 "operator",
                 "fee",
@@ -2337,6 +2387,7 @@
             "name": "Newspaper Vending Machine"
         },
         "amenity/vending_machine/parcel_pickup_dropoff": {
+            "icon": "post",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2357,6 +2408,7 @@
             "name": "Parcel Pickup/Dropoff Vending Machine"
         },
         "amenity/vending_machine/parking_tickets": {
+            "icon": "parking-garage",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2376,6 +2428,7 @@
             "name": "Parking Ticket Vending Machine"
         },
         "amenity/vending_machine/public_transport_tickets": {
+            "icon": "bus",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2399,6 +2452,7 @@
             "name": "Transit Ticket Vending Machine"
         },
         "amenity/vending_machine/sweets": {
+            "icon": "ice-cream",
             "fields": [
                 "operator",
                 "payment_multi",
@@ -2422,6 +2476,7 @@
             "name": "Snack Vending Machine"
         },
         "amenity/vending_machine/vending_machine": {
+            "icon": "gaming",
             "fields": [
                 "vending",
                 "operator",
@@ -2528,7 +2583,7 @@
             "name": "Waste Transfer Station"
         },
         "amenity/water_point": {
-            "icon": "water",
+            "icon": "drinking-water",
             "geometry": [
                 "area",
                 "vertex",
@@ -2688,6 +2743,10 @@
             "name": "Gate"
         },
         "barrier/hedge": {
+            "fields": [
+                "taxon/genus",
+                "taxon"
+            ],
             "geometry": [
                 "line",
                 "area"
@@ -4701,6 +4760,7 @@
             "name": "Indoor Corridor"
         },
         "highway/crossing": {
+            "icon": "pitch",
             "fields": [
                 "crossing",
                 "kerb",
@@ -4716,6 +4776,7 @@
             "name": "Street Crossing"
         },
         "highway/crosswalk": {
+            "icon": "pitch",
             "fields": [
                 "crossing",
                 "kerb",
@@ -5371,6 +5432,27 @@
             ],
             "name": "Unmaintained Track Road"
         },
+        "highway/traffic_mirror": {
+            "icon": "circle-stroked",
+            "geometry": [
+                "point"
+            ],
+            "tags": {
+                "highway": "traffic_mirror"
+            },
+            "terms": [
+                "blind spot",
+                "convex",
+                "corner",
+                "curved",
+                "roadside",
+                "round",
+                "safety",
+                "sphere",
+                "visibility"
+            ],
+            "name": "Traffic Mirror"
+        },
         "highway/traffic_signals": {
             "geometry": [
                 "vertex"
@@ -5512,6 +5594,7 @@
             "name": "Boundary Stone"
         },
         "historic/castle": {
+            "icon": "castle",
             "geometry": [
                 "point",
                 "area"
@@ -5569,6 +5652,7 @@
             "name": "Wayside Cross"
         },
         "historic/wayside_shrine": {
+            "icon": "religious-christian",
             "geometry": [
                 "point",
                 "vertex",
@@ -5725,6 +5809,8 @@
         "landuse/forest": {
             "icon": "park2",
             "fields": [
+                "taxon/genus",
+                "taxon",
                 "leaf_type",
                 "leaf_cycle"
             ],
@@ -6712,6 +6798,7 @@
             "name": "Lighthouse"
         },
         "man_made/mast": {
+            "icon": "lighthouse",
             "fields": [
                 "tower/type",
                 "tower/construction",
@@ -6852,7 +6939,20 @@
             "geometry": [
                 "point"
             ],
+            "fields": [
+                "surveillance",
+                "surveillance/type",
+                "camera/type",
+                "camera/mount",
+                "surveillance/zone"
+            ],
             "terms": [
+                "security",
+                "camera",
+                "guard",
+                "video",
+                "webcam",
+                "alpr",
                 "cctv"
             ],
             "tags": {
@@ -6875,6 +6975,7 @@
             "name": "Survey Point"
         },
         "man_made/tower": {
+            "icon": "lighthouse",
             "fields": [
                 "tower/type",
                 "tower/construction",
@@ -7195,6 +7296,10 @@
             "name": "Grassland"
         },
         "natural/heath": {
+            "fields": [
+                "taxon/genus",
+                "taxon"
+            ],
             "geometry": [
                 "area"
             ],
@@ -7265,6 +7370,11 @@
             "name": "Scree"
         },
         "natural/scrub": {
+            "icon": "wetland",
+            "fields": [
+                "taxon/genus",
+                "taxon"
+            ],
             "geometry": [
                 "area"
             ],
@@ -7290,6 +7400,9 @@
         },
         "natural/tree_row": {
             "fields": [
+                "taxon/genus",
+                "taxon",
+                "height",
                 "leaf_type",
                 "leaf_cycle",
                 "denotation"
@@ -7306,6 +7419,9 @@
         },
         "natural/tree": {
             "fields": [
+                "taxon/genus",
+                "taxon",
+                "height",
                 "leaf_type_singular",
                 "leaf_cycle_singular",
                 "denotation"
@@ -7415,6 +7531,8 @@
         "natural/wood": {
             "icon": "park2",
             "fields": [
+                "taxon/genus",
+                "taxon",
                 "leaf_type",
                 "leaf_cycle"
             ],
@@ -8036,6 +8154,7 @@
             "searchable": false
         },
         "power/generator": {
+            "icon": "danger",
             "fields": [
                 "operator",
                 "generator/source",
@@ -8082,6 +8201,7 @@
             "name": "Power Pole"
         },
         "power/substation": {
+            "icon": "danger",
             "fields": [
                 "substation",
                 "operator",
@@ -8106,6 +8226,7 @@
             "name": "High-Voltage Tower"
         },
         "power/transformer": {
+            "icon": "danger",
             "geometry": [
                 "point",
                 "vertex",
@@ -10646,6 +10767,7 @@
             "name": "Wine Shop"
         },
         "tourism": {
+            "icon": "attraction",
             "fields": [
                 "tourism"
             ],
@@ -10887,6 +11009,7 @@
             "name": "Hotel"
         },
         "tourism/information": {
+            "icon": "information",
             "fields": [
                 "information",
                 "operator",
@@ -10972,6 +11095,7 @@
             "name": "Picnic Site"
         },
         "tourism/theme_park": {
+            "icon": "amusement-park",
             "fields": [
                 "operator",
                 "address",
@@ -10987,6 +11111,7 @@
             "name": "Theme Park"
         },
         "tourism/viewpoint": {
+            "icon": "star-stroked",
             "geometry": [
                 "point",
                 "vertex"
@@ -11811,7 +11936,7 @@
             "name": "Stream"
         },
         "waterway/water_point": {
-            "icon": "water",
+            "icon": "drinking-water",
             "geometry": [
                 "area",
                 "vertex",
@@ -15060,6 +15185,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15079,6 +15211,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15098,6 +15237,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15117,6 +15263,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15136,6 +15289,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15155,6 +15315,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15174,6 +15341,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15193,6 +15367,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15212,6 +15393,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15231,6 +15419,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15250,6 +15445,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15269,6 +15471,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15288,6 +15497,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15307,6 +15523,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15326,6 +15549,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15345,6 +15575,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15364,6 +15601,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15383,6 +15627,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15402,6 +15653,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15421,6 +15679,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15440,6 +15705,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15459,6 +15731,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15478,6 +15757,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15497,6 +15783,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15516,6 +15809,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15535,6 +15835,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15554,6 +15861,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15573,6 +15887,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15592,6 +15913,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15611,6 +15939,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15630,6 +15965,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15649,6 +15991,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15668,6 +16017,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15687,6 +16043,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15706,6 +16069,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15725,6 +16095,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15744,6 +16121,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15763,6 +16147,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15782,6 +16173,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15801,6 +16199,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15820,6 +16225,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15839,6 +16251,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15858,6 +16277,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15877,6 +16303,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15896,6 +16329,13 @@
                 "address",
                 "building_area",
                 "opening_hours",
+                "sport",
+                "lunch/menu",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15920,6 +16360,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15945,6 +16392,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15970,6 +16424,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -15995,6 +16456,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16019,6 +16487,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16044,6 +16519,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16068,6 +16550,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16093,6 +16582,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16118,6 +16614,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16142,6 +16645,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16166,6 +16676,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16190,6 +16707,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16214,6 +16738,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16239,6 +16770,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16263,6 +16801,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16287,6 +16832,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16312,6 +16864,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16336,6 +16895,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16360,6 +16926,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16384,6 +16957,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16408,6 +16988,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16432,6 +17019,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16456,6 +17050,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16480,6 +17081,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16504,6 +17112,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16528,6 +17143,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16553,6 +17175,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16577,6 +17206,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16601,6 +17237,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16625,6 +17268,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16649,6 +17299,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16673,6 +17330,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16698,6 +17362,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16723,6 +17394,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16747,6 +17425,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16772,6 +17457,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16797,6 +17489,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16821,6 +17520,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16846,6 +17552,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16870,6 +17583,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16894,6 +17614,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16919,6 +17646,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16943,6 +17677,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16968,6 +17709,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -16994,6 +17742,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17018,6 +17773,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17042,6 +17804,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17066,6 +17835,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17090,6 +17866,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17114,6 +17897,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17140,6 +17930,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17164,6 +17961,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17188,6 +17992,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17213,6 +18024,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17237,6 +18055,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17261,6 +18086,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17285,6 +18117,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17309,6 +18148,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17333,6 +18179,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17358,6 +18211,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17383,6 +18243,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17407,6 +18274,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17431,6 +18305,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17455,6 +18336,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17479,6 +18367,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17503,6 +18398,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17527,6 +18429,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17552,6 +18461,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17576,6 +18492,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17600,6 +18523,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17624,6 +18554,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17649,6 +18586,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17674,6 +18618,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17698,6 +18649,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17722,6 +18680,13 @@
                 "takeaway",
                 "delivery",
                 "drive_through",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17746,6 +18711,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17769,6 +18741,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17792,6 +18771,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17815,6 +18801,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17838,6 +18831,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17861,6 +18861,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17884,6 +18891,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17907,6 +18921,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17930,6 +18951,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17953,6 +18981,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17976,6 +19011,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -17999,6 +19041,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18022,6 +19071,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18045,6 +19101,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18068,6 +19131,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18091,6 +19161,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18114,6 +19191,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18137,6 +19221,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18160,6 +19251,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18183,6 +19281,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18206,6 +19311,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18229,6 +19341,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18252,6 +19371,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18275,6 +19401,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18298,6 +19431,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18321,6 +19461,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18344,6 +19491,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18367,6 +19521,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18390,6 +19551,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18413,6 +19581,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18436,6 +19611,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18459,6 +19641,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18482,6 +19671,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18505,6 +19701,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18528,6 +19731,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18551,6 +19761,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18574,6 +19791,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18597,6 +19821,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18620,6 +19851,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18643,6 +19881,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18666,6 +19911,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18689,6 +19941,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18712,6 +19971,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18735,6 +20001,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18758,6 +20031,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18781,6 +20061,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18804,6 +20091,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18827,6 +20121,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18850,6 +20151,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18873,6 +20181,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18896,6 +20211,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18919,6 +20241,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18942,6 +20271,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18965,6 +20301,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -18988,6 +20331,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19011,6 +20361,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19034,6 +20391,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19057,6 +20421,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19080,6 +20451,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19103,6 +20481,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19126,6 +20511,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19149,6 +20541,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19172,6 +20571,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19195,6 +20601,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19218,6 +20631,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19241,6 +20661,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19264,6 +20691,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19287,6 +20721,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19310,6 +20751,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19333,6 +20781,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19356,6 +20811,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19379,6 +20841,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19402,6 +20871,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19425,6 +20901,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19448,6 +20931,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19471,6 +20961,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19494,6 +20991,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19517,6 +21021,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19540,6 +21051,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19563,6 +21081,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19586,6 +21111,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19609,6 +21141,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19632,6 +21171,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19655,6 +21201,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19678,6 +21231,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19701,6 +21261,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19724,6 +21291,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19747,6 +21321,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19770,6 +21351,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19793,6 +21381,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19816,6 +21411,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19839,6 +21441,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19862,6 +21471,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19885,6 +21501,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19908,6 +21531,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19931,6 +21561,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19954,6 +21591,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -19977,6 +21621,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20000,6 +21651,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20023,6 +21681,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20046,6 +21711,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20069,6 +21741,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20092,6 +21771,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20116,6 +21802,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20139,6 +21832,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20162,6 +21862,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20185,6 +21892,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20208,6 +21922,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20231,6 +21952,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20254,6 +21982,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20277,6 +22012,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20300,6 +22042,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20323,6 +22072,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20346,6 +22102,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20369,6 +22132,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20392,6 +22162,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20415,6 +22192,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20438,6 +22222,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20461,6 +22252,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20484,6 +22282,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20507,6 +22312,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20530,6 +22342,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20553,6 +22372,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20576,6 +22402,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -20599,6 +22432,13 @@
                 "capacity",
                 "takeaway",
                 "delivery",
+                "lunch/menu",
+                "lunch/buffet",
+                "internet_access",
+                "internet_access/ssid",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27509,9 +29349,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27530,9 +29377,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27551,9 +29405,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27572,9 +29433,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27593,9 +29461,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27614,9 +29489,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27635,9 +29517,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27657,9 +29546,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27678,9 +29574,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27699,9 +29602,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27720,9 +29630,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27741,9 +29658,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27762,9 +29686,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27784,9 +29715,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27805,9 +29743,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27826,9 +29771,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27847,9 +29799,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27869,9 +29828,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27890,9 +29856,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27911,9 +29884,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27932,9 +29912,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27953,9 +29940,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27974,9 +29968,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -27995,9 +29996,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -28016,9 +30024,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -28038,9 +30053,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true
@@ -28059,9 +30081,16 @@
             "fields": [
                 "cuisine",
                 "internet_access",
+                "internet_access/fee",
+                "internet_access/ssid",
                 "address",
                 "building_area",
                 "opening_hours",
+                "lunch/menu",
+                "lunch/buffet",
+                "phone",
+                "website",
+                "contact/facebook",
                 "smoking"
             ],
             "suggestion": true

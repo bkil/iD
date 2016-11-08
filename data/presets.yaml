@@ -203,6 +203,21 @@ en:
       building_area:
         # building=*
         label: Building
+      camera/features:
+        # 'camera:features=*'
+        label: Camera features
+        # camera/features field placeholder
+        placeholder: 'Webcam, Microphone, Nightvision, Heatvision, Zoom, Motion, Wireless'
+      camera/mount:
+        # 'camera:mount=*'
+        label: Camera mount
+        # camera/mount field placeholder
+        placeholder: 'Wall, Pole'
+      camera/type:
+        # 'camera:type=*'
+        label: Camera type
+        # camera/type field placeholder
+        placeholder: 'Fixed, Panning, Dome'
       capacity:
         # capacity=*
         label: Capacity
@@ -258,6 +273,51 @@ en:
       construction:
         # construction=*
         label: Type
+      contact/email:
+        # 'contact:email=*'
+        label: E-mail
+        # contact/email field placeholder
+        placeholder: user@example.com
+      contact/facebook:
+        # 'contact:facebook=*'
+        label: Facebook Profile
+        # contact/facebook field placeholder
+        placeholder: 'http://example.com/'
+      contact/google_plus:
+        # 'contact:google_plus=*'
+        label: Google+ Account
+        # contact/google_plus field placeholder
+        placeholder: 'http://example.com/'
+      contact/instagram:
+        # 'contact:instagram=*'
+        label: Instagram Account
+        # contact/instagram field placeholder
+        placeholder: 'http://example.com/'
+      contact/linkedin:
+        # 'contact:linkedin=*'
+        label: LinkedIn Account
+        # contact/linkedin field placeholder
+        placeholder: 'http://example.com/'
+      contact/skype:
+        # 'contact:skype=*'
+        label: Skype Name
+        # contact/skype field placeholder
+        placeholder: SkypeName
+      contact/twitter:
+        # 'contact:twitter=*'
+        label: Twitter Account
+        # contact/twitter field placeholder
+        placeholder: 'http://example.com/'
+      contact/vk:
+        # 'contact:vk=*'
+        label: VK.com Account
+        # contact/vk field placeholder
+        placeholder: 'http://example.com/'
+      contact/webcam:
+        # 'contact:webcam=*'
+        label: Webcam feed URL
+        # contact/webcam field placeholder
+        placeholder: 'http://example.com/'
       content:
         # content=*
         label: Contents
@@ -495,6 +555,9 @@ en:
       internet_access/fee:
         # 'internet_access:fee=*'
         label: Internet Access Fee
+      internet_access/ssid:
+        # 'internet_access:ssid=*'
+        label: SSID (Network Name)
       kerb:
         # kerb=*
         label: Curb Ramp
@@ -580,6 +643,21 @@ en:
       location:
         # location=*
         label: Location
+      lunch:
+        # lunch=*
+        label: Daily Lunch (Unknown Kind)
+        # lunch field placeholder
+        placeholder: 'Yes, No, <Lunch Hours>'
+      lunch/buffet:
+        # 'lunch:buffet=*'
+        label: Daily Buffet Lunch (All You Can Eat)
+        # lunch/buffet field placeholder
+        placeholder: 'Yes, No, <Lunch Hours>'
+      lunch/menu:
+        # 'lunch:menu=*'
+        label: 'Daily Menu Lunch (Mass Prepared, Inexpensive)'
+        # lunch/menu field placeholder
+        placeholder: 'Yes, No, <Lunch Hours>'
       man_made:
         # man_made=*
         label: Type
@@ -733,6 +811,9 @@ en:
       operator:
         # operator=*
         label: Operator
+      outdoor_seating:
+        # outdoor_seating=*
+        label: Outdoor Seating
       par:
         # par=*
         label: Par
@@ -1047,6 +1128,21 @@ en:
       surface:
         # surface=*
         label: Surface
+      surveillance:
+        # surveillance=*
+        label: Surveillance kind
+        # surveillance field placeholder
+        placeholder: 'Public, Outdoor, Indoor'
+      surveillance/type:
+        # 'surveillance:type=*'
+        label: What is watching
+        # surveillance/type field placeholder
+        placeholder: 'Camera, Guard, ALPR'
+      surveillance/zone:
+        # 'surveillance:zone=*'
+        label: Zone
+        # surveillance/zone field placeholder
+        placeholder: 'Town, Parking, Traffic, Shop, Building'
       tactile_paving:
         # tactile_paving=*
         label: Tactile Paving
@@ -1062,6 +1158,16 @@ en:
           'yes': 'Yes'
         # takeaway field placeholder
         placeholder: 'Yes, No, Takeaway Only...'
+      taxon:
+        # taxon=*
+        label: Taxonomical Name of Species
+        # taxon field placeholder
+        placeholder: Scientific & Localized Names
+      taxon/genus:
+        # 'taxon:genus=*'
+        label: Taxonomic Genus of Species
+        # taxon/genus field placeholder
+        placeholder: Scientific Name of Genus
       toilets/disposal:
         # 'toilets:disposal=*'
         label: Disposal
@@ -1458,6 +1564,7 @@ en:
       amenity/hunting_stand:
         # amenity=hunting_stand
         name: Hunting Stand
+        # 'terms: game,lookout,shoot,wild,watch'
         terms: '<translate with synonyms or related terms for ''Hunting Stand'', separated by commas>'
       amenity/ice_cream:
         # amenity=ice_cream
@@ -1562,7 +1669,7 @@ en:
       amenity/pub:
         # amenity=pub
         name: Pub
-        # 'terms: dive,beer,bier,booze'
+        # 'terms: alcohol,drink,dive,beer,bier,booze'
         terms: '<translate with synonyms or related terms for ''Pub'', separated by commas>'
       amenity/public_bookcase:
         # amenity=public_bookcase
@@ -2442,6 +2549,11 @@ en:
         name: Unmaintained Track Road
         # 'terms: woods road,forest road,logging road,fire road,farm road,agricultural road,ranch road,carriage road,primitive,unmaintained,rut,offroad,4wd,4x4,four wheel drive,atv,quad,jeep,double track,two track'
         terms: '<translate with synonyms or related terms for ''Unmaintained Track Road'', separated by commas>'
+      highway/traffic_mirror:
+        # highway=traffic_mirror
+        name: Traffic Mirror
+        # 'terms: blind spot,convex,corner,curved,roadside,round,safety,sphere,visibility'
+        terms: '<translate with synonyms or related terms for ''Traffic Mirror'', separated by commas>'
       highway/traffic_signals:
         # highway=traffic_signals
         name: Traffic Signals
@@ -2871,7 +2983,7 @@ en:
       man_made/surveillance:
         # man_made=surveillance
         name: Surveillance
-        # 'terms: cctv'
+        # 'terms: security,camera,guard,video,webcam,alpr,cctv'
         terms: '<translate with synonyms or related terms for ''Surveillance'', separated by commas>'
       man_made/survey_point:
         # man_made=survey_point

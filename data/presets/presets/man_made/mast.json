@@ -1,4 +1,5 @@
 {
+    "icon": "lighthouse",
     "fields": [
         "tower/type",
         "tower/construction",

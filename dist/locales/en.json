@@ -1541,6 +1541,14 @@
                         "only": "Takeaway Only"
                     }
                 },
+                "taxon": {
+                    "label": "Taxonomical Name of Species",
+                    "placeholder": "Scientific & Localized Names"
+                },
+                "taxon/genus": {
+                    "label": "Taxonomic Genus of Species",
+                    "placeholder": "Scientific Name of Genus"
+                },
                 "toilets/disposal": {
                     "label": "Disposal",
                     "options": {

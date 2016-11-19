@@ -1077,6 +1077,16 @@ en:
           'yes': 'Yes'
         # takeaway field placeholder
         placeholder: 'Yes, No, Takeaway Only...'
+      taxon:
+        # taxon=*
+        label: Taxonomical Name of Species
+        # taxon field placeholder
+        placeholder: Scientific & Localized Names
+      taxon/genus:
+        # 'taxon:genus=*'
+        label: Taxonomic Genus of Species
+        # taxon/genus field placeholder
+        placeholder: Scientific Name of Genus
       toilets/disposal:
         # 'toilets:disposal=*'
         label: Disposal

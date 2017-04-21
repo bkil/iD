@@ -820,6 +820,18 @@
                 "building": {
                     "label": "Building"
                 },
+                "camera/features": {
+                    "label": "Camera features",
+                    "placeholder": "Webcam, Microphone, Nightvision, Heatvision, Zoom, Motion, Wireless"
+                },
+                "camera/mount": {
+                    "label": "Camera mount",
+                    "placeholder": "Wall, Pole"
+                },
+                "camera/type": {
+                    "label": "Camera type",
+                    "placeholder": "Fixed, Panning, Dome"
+                },
                 "capacity": {
                     "label": "Capacity",
                     "placeholder": "50, 100, 200..."
@@ -857,6 +869,10 @@
                 },
                 "construction": {
                     "label": "Type"
+                },
+                "contact/webcam": {
+                    "label": "Webcam feed URL",
+                    "placeholder": "http://example.com/"
                 },
                 "content": {
                     "label": "Contents"
@@ -1535,6 +1551,18 @@
                 },
                 "surface": {
                     "label": "Surface"
+                },
+                "surveillance": {
+                    "label": "Surveillance kind",
+                    "placeholder": "Public, Outdoor, Indoor"
+                },
+                "surveillance/type": {
+                    "label": "What is watching",
+                    "placeholder": "Camera, Guard, ALPR"
+                },
+                "surveillance/zone": {
+                    "label": "Zone",
+                    "placeholder": "Town, Parking, Traffic, Shop, Building"
                 },
                 "tactile_paving": {
                     "label": "Tactile Paving"

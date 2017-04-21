@@ -7004,6 +7004,13 @@
             "geometry": [
                 "point"
             ],
+            "fields": [
+                "surveillance",
+                "surveillance/type",
+                "camera/type",
+                "camera/mount",
+                "surveillance/zone"
+            ],
             "terms": [
                 "anpr",
                 "alpr",

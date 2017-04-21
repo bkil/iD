@@ -206,6 +206,21 @@ en:
       building_area:
         # building=*
         label: Building
+      camera/features:
+        # 'camera:features=*'
+        label: Camera features
+        # camera/features field placeholder
+        placeholder: 'Webcam, Microphone, Nightvision, Heatvision, Zoom, Motion, Wireless'
+      camera/mount:
+        # 'camera:mount=*'
+        label: Camera mount
+        # camera/mount field placeholder
+        placeholder: 'Wall, Pole'
+      camera/type:
+        # 'camera:type=*'
+        label: Camera type
+        # camera/type field placeholder
+        placeholder: 'Fixed, Panning, Dome'
       capacity:
         # capacity=*
         label: Capacity
@@ -261,6 +276,11 @@ en:
       construction:
         # construction=*
         label: Type
+      contact/webcam:
+        # 'contact:webcam=*'
+        label: Webcam feed URL
+        # contact/webcam field placeholder
+        placeholder: 'http://example.com/'
       content:
         # content=*
         label: Contents
@@ -1070,6 +1090,21 @@ en:
       surface:
         # surface=*
         label: Surface
+      surveillance:
+        # surveillance=*
+        label: Surveillance kind
+        # surveillance field placeholder
+        placeholder: 'Public, Outdoor, Indoor'
+      surveillance/type:
+        # 'surveillance:type=*'
+        label: What is watching
+        # surveillance/type field placeholder
+        placeholder: 'Camera, Guard, ALPR'
+      surveillance/zone:
+        # 'surveillance:zone=*'
+        label: Zone
+        # surveillance/zone field placeholder
+        placeholder: 'Town, Parking, Traffic, Shop, Building'
       tactile_paving:
         # tactile_paving=*
         label: Tactile Paving

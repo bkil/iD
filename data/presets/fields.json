@@ -283,6 +283,30 @@
             "type": "combo",
             "label": "Building"
         },
+        "camera/features": {
+            "key": "camera:features",
+            "type": "combo",
+            "label": "Camera features",
+            "placeholder": "Webcam, Microphone, Nightvision, Heatvision, Zoom, Motion, Wireless"
+        },
+        "camera/mount": {
+            "key": "camera:mount",
+            "type": "combo",
+            "label": "Camera mount",
+            "placeholder": "Wall, Pole"
+        },
+        "camera/type": {
+            "key": "camera:type",
+            "type": "combo",
+            "label": "Camera type",
+            "default": "fixed",
+            "placeholder": "Fixed, Panning, Dome",
+            "options": [
+                "fixed",
+                "panning",
+                "dome"
+            ]
+        },
         "capacity": {
             "key": "capacity",
             "type": "number",
@@ -334,6 +358,14 @@
             "key": "construction",
             "type": "combo",
             "label": "Type"
+        },
+        "contact/webcam": {
+            "key": "contact:webcam",
+            "type": "url",
+            "icon": "website",
+            "placeholder": "http://example.com/",
+            "universal": true,
+            "label": "Webcam feed URL"
         },
         "content": {
             "key": "content",
@@ -1456,6 +1488,36 @@
             "key": "surface",
             "type": "combo",
             "label": "Surface"
+        },
+        "surveillance": {
+            "key": "surveillance",
+            "type": "combo",
+            "label": "Surveillance kind",
+            "default": "outdoor",
+            "placeholder": "Public, Outdoor, Indoor",
+            "options": [
+                "public",
+                "outdoor",
+                "indoor"
+            ]
+        },
+        "surveillance/type": {
+            "key": "surveillance:type",
+            "type": "combo",
+            "label": "What is watching",
+            "default": "camera",
+            "placeholder": "Camera, Guard, ALPR",
+            "options": [
+                "camera",
+                "guard",
+                "alpr"
+            ]
+        },
+        "surveillance/zone": {
+            "key": "surveillance:zone",
+            "type": "combo",
+            "label": "Zone",
+            "placeholder": "Town, Parking, Traffic, Shop, Building"
         },
         "tactile_paving": {
             "key": "tactile_paving",
